@@ -1,0 +1,25 @@
+name: Run all tests
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+  
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install iota tools
+      run: wget https://github.com/iotaledger/iota/releases/download/v0.8.0-alpha/iota-v0.8.0-alpha-linux-x86_64.tgz
+    - name: a
+      run: tar -xzf iota-v0.8.0-alpha-linux-x86_64.tgz
+    - name: aa
+      run: ls -l
+    - name: bb
+      run: pwd
