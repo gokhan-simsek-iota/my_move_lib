@@ -20,4 +20,4 @@ jobs:
     - name: --- untar
       run: tar -xzf iota-v0.8.0-alpha-linux-x86_64.tgz
     - name: --- run move tests
-      run: iota move test
+      run: ./iota move test
