@@ -16,7 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: --- install iota tools
-      run: wget https://github.com/iotaledger/iota/releases/download/v0.8.0-alpha/iota-v0.8.0-alpha-linux-x86_64.tgz
+      run: wget -q --show-progress https://github.com/iotaledger/iota/releases/download/v0.8.0-alpha/iota-v0.8.0-alpha-linux-x86_64.tgz
     - name: --- untar
       run: tar -xzf iota-v0.8.0-alpha-linux-x86_64.tgz
     - name: --- run move tests
