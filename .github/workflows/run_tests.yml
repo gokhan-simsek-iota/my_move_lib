@@ -15,6 +15,8 @@ jobs:
   
     steps:
     - uses: actions/checkout@v3
+    - run: sudo apt update
+    - run: sudo apt install libc6
     - name: --- install iota tools
       run: wget https://github.com/iotaledger/iota/releases/download/v0.8.0-alpha/iota-v0.8.0-alpha-linux-x86_64.tgz
     - name: --- untar
