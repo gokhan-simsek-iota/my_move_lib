@@ -21,5 +21,5 @@ public struct Foo {}
 fun test_generic_fn() {
     let (_, module_name, _) = do_i_know_you<Foo>();
     
-    assert!(module_name == b"generics".to_ascii_string());
+    assert!(module_name == b"generics aa".to_ascii_string());
 }
